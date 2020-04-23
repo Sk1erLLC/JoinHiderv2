@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hypixel_join_hider_2",
+  "name": "Join Message Hider",
+  "description": "Toggle Guild + Friend Join / Leave notifications",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sk1er"],
+  "credits": "Hypixel for changing the format and forcing me to remake this",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
