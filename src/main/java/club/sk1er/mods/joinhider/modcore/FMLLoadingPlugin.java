@@ -1,10 +1,13 @@
 package club.sk1er.mods.joinhider.modcore;
 
 import net.minecraft.launchwrapper.Launch;
+import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
+import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 
+@MCVersion(ForgeVersion.mcVersion)
 public class FMLLoadingPlugin implements IFMLLoadingPlugin {
     @Override
     public String[] getASMTransformerClass() {

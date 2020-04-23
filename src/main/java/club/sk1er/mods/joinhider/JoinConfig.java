@@ -17,7 +17,6 @@ public class JoinConfig extends Vigilant {
     )
     public static boolean hideFriendJoin = true;
 
-
     @Property(
         type = PropertyType.SWITCH,
         name = "Hide Friend Leave Messages",
@@ -26,7 +25,6 @@ public class JoinConfig extends Vigilant {
         subcategory = "General"
     )
     public static boolean hideFriendLeave = true;
-
 
     @Property(
         type = PropertyType.SWITCH,
@@ -37,7 +35,6 @@ public class JoinConfig extends Vigilant {
     )
     public static boolean hideGuildJoin = true;
 
-
     @Property(
         type = PropertyType.SWITCH,
         name = "Hide Guild Leave Messages",
@@ -46,7 +43,6 @@ public class JoinConfig extends Vigilant {
         subcategory = "General"
     )
     public static boolean hideGuildLeave = true;
-
 
     public JoinConfig() {
         super(new File("./config/joinhider.toml"));

@@ -13,11 +13,16 @@ public class CommandJoinConfig extends ModCoreCommand {
 
     @Override
     public String getCommandUsage(ICommandSender sender) {
-        return getCommandName();
+        return "/" + getCommandName();
     }
 
     @Override
     public void processCommand(ICommandSender sender, String[] args) throws CommandException {
         ModCore.getInstance().getGuiHandler().open(HypixelJoinHider.joinConfig.gui());
+    }
+
+    @Override
+    public int getRequiredPermissionLevel() {
+        return -1;
     }
 }

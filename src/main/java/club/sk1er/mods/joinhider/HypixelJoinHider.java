@@ -1,5 +1,7 @@
 package club.sk1er.mods.joinhider;
 
+import club.sk1er.mods.joinhider.modcore.ModCoreInstaller;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,9 +24,12 @@ public class HypixelJoinHider {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        MinecraftForge.EVENT_BUS.register(this);
+        ModCoreInstaller.initializeModCore(Minecraft.getMinecraft().mcDataDir);
+
         joinConfig = new JoinConfig();
         joinConfig.preload();
+
+        MinecraftForge.EVENT_BUS.register(this);
         ClientCommandHandler.instance.registerCommand(new CommandJoinConfig());
     }
 
