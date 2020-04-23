@@ -53,3 +53,4 @@ public class JoinConfig extends Vigilant {
         initialize();
     }
 }
+
