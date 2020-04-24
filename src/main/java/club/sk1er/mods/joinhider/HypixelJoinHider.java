@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 @Mod(modid = HypixelJoinHider.MODID, version = HypixelJoinHider.VERSION)
 public class HypixelJoinHider {
     public static final String MODID = "hypixel_join_hider_2";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "2.1";
     public static JoinConfig joinConfig;
     private final Pattern guildJoin = Pattern.compile("Guild > \\w{1,16} joined.");
     private final Pattern guildLeave = Pattern.compile("Guild > \\w{1,16} left.");
